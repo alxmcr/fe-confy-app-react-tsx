@@ -6,8 +6,10 @@ type Props = {
 
 export default function NavLinkListItem({ navLink }: Props) {
   return (
-    <li id={navLink.id}>
-      <a href={navLink.href}>{navLink.text}</a>
+    <li id={navLink.id} className="w-full">
+      <a href={navLink.href} className="w-full">
+        {navLink.text}
+      </a>
     </li>
   );
 }

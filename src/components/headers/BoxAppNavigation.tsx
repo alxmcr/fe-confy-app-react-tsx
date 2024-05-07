@@ -25,13 +25,13 @@ export default function BoxAppNavigation({ navLinks = [] }: Props) {
           {showMenu ? <Icon24x24Close /> : <Icon24x24Menu />}
         </button>
       </div>
-      <div className="hidden md:flex">
+      <div className="hidden w-full md:flex">
         <AppNavigation>
           <NavLinksList navLinks={navLinks} />
         </AppNavigation>
       </div>
       {showMenu ? (
-        <div className="flex md:hidden">
+        <div className="flex w-full md:hidden">
           <AppNavigation>
             <NavLinksList navLinks={navLinks} />
           </AppNavigation>

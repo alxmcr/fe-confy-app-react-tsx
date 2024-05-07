@@ -7,7 +7,7 @@ type Props = {
 
 export default function NavLinksList({ navLinks = [] }: Props) {
   return (
-    <ul className="flex flex-col gap-4 md:flex-row">
+    <ul className="flex w-full flex-col gap-4 md:flex-row">
       {navLinks.map((navLink) => (
         <NavLinkListItem key={navLink.id} navLink={navLink} />
       ))}
