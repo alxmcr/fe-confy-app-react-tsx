@@ -1,10 +1,10 @@
-import { NavLink } from 'react-router-dom';
-import AppNavigation from './AppNavigation';
-import Icon44x44Code from '../@icons/44x44/Icon44x44Code';
-import { NavLinkData } from '../../@types/appTypes';
-import Icon24x24Menu from '../@icons/24x24/Icon24x24Menu';
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { NavLinkData } from '../../@types/appTypes';
 import Icon24x24Close from '../@icons/24x24/Icon24x24Close';
+import Icon24x24Menu from '../@icons/24x24/Icon24x24Menu';
+import Icon44x44Code from '../@icons/44x44/Icon44x44Code';
+import AppNavigation from './AppNavigation';
 
 type Props = {
   navLinks: NavLinkData[];
