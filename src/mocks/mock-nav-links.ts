@@ -19,7 +19,7 @@ export const scheduleLink: NavLinkData = {
 };
 
 export const ticketLink: NavLinkData = {
-  id: 'nav-link-003',
+  id: 'nav-link-004',
   text: 'Tickets',
   href: '#tickets',
 };
