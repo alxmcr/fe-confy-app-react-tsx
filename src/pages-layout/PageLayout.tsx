@@ -9,9 +9,9 @@ type Props = {
 
 export default function PageLayout({ children }: Props) {
   return (
-    <div>
+    <div className="h-screen w-screen px-[16px] md:px-[40px] lg:w-[1028px] lg:px-0">
       <AppHeader navLinks={MOCK_NAV_LINKS} />
-      <div className="h-screen w-screen">{children}</div>
+      {children}
       <AppFooter />
     </div>
   );
