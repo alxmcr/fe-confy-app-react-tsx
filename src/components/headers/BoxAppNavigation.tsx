@@ -5,6 +5,7 @@ import Icon24x24Close from '../@icons/24x24/Icon24x24Close';
 import Icon24x24Menu from '../@icons/24x24/Icon24x24Menu';
 import Icon44x44Code from '../@icons/44x44/Icon44x44Code';
 import AppNavigation from './AppNavigation';
+import NavLinksList from './NavLinksList';
 
 type Props = {
   navLinks: NavLinkData[];
@@ -24,8 +25,18 @@ export default function BoxAppNavigation({ navLinks = [] }: Props) {
           {showMenu ? <Icon24x24Close /> : <Icon24x24Menu />}
         </button>
       </div>
-      <AppNavigation navLinks={navLinks} />
-      {showMenu ? <AppNavigation navLinks={navLinks} /> : null}
+      <div className="hidden md:flex">
+        <AppNavigation>
+          <NavLinksList navLinks={navLinks} />
+        </AppNavigation>
+      </div>
+      {showMenu ? (
+        <div className="flex md:hidden">
+          <AppNavigation>
+            <NavLinksList navLinks={navLinks} />
+          </AppNavigation>
+        </div>
+      ) : null}
     </div>
   );
 }

@@ -1,14 +1,8 @@
-import { NavLinkData } from '../../@types/appTypes';
-import NavLinksList from './NavLinksList';
 
 type Props = {
-  navLinks: NavLinkData[];
+  children: React.ReactNode;
 };
 
-export default function AppNavigation({ navLinks = [] }: Props) {
-  return (
-    <nav>
-      <NavLinksList navLinks={navLinks} />
-    </nav>
-  );
+export default function AppNavigation({ children }: Props) {
+  return <nav>{children}</nav>;
 }
