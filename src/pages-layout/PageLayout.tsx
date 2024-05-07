@@ -11,10 +11,7 @@ export default function PageLayout({ children }: Props) {
   return (
     <div>
       <AppHeader navLinks={MOCK_NAV_LINKS} />
-      <div className="h-screen">
-        <div className="w-full p-[16px] md:p-[40px] lg:w-[1028px]">{children}</div>
-      </div>
-      ;
+      <div className="h-screen w-screen">{children}</div>
       <AppFooter />
     </div>
   );
