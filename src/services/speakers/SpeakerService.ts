@@ -1,4 +1,4 @@
-import { SpeakerData } from '../@types/serviceTypes';
+import { SpeakerData } from '../../@types/serviceTypes';
 import { ISpeakerService } from './ISpeakerService';
 
 type SpeakersResponseData = {

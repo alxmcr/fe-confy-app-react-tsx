@@ -23,3 +23,11 @@ export type SpeakerData = {
     thumbnail: string;
   };
 };
+
+export type TalkData = {
+  id: string;
+  time: string;
+  title: string;
+  speakerName: string;
+  speakerPhoto: string;
+};
