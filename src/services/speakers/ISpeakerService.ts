@@ -1,4 +1,4 @@
-import { SpeakerData } from '../@types/serviceTypes';
+import { SpeakerData } from '../../@types/serviceTypes';
 
 export interface ISpeakerService {
   findAllSpeakers(): Promise<SpeakerData[]>;

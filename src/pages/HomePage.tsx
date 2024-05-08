@@ -1,6 +1,7 @@
 import AppFooter from '../components/footer/AppFooter';
 import AppHeader from '../components/headers/AppHeader';
 import HeroSection from '../components/sections/HeroSection';
+import ScheduleSection from '../components/sections/ScheduleSection';
 import SpeakersSection from '../components/sections/SpeakersSection';
 import { MOCK_NAV_LINKS } from '../mocks/mock-nav-links';
 
@@ -10,6 +11,7 @@ export default function HomePage() {
       <AppHeader navLinks={MOCK_NAV_LINKS} />
       <HeroSection />
       <SpeakersSection />
+      <ScheduleSection />
       <AppFooter />
     </div>
   );

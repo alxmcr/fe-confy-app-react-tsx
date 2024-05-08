@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { SpeakerService } from '../services/SpeakerService';
+import { SpeakerService } from '../services/speakers/SpeakerService';
 import { SpeakerData } from '../@types/serviceTypes';
 
 export function useSpeakers() {
