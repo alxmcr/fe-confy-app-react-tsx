@@ -1,12 +1,15 @@
-import HeroSection from '../components/sections/HeroSection';
-import SpeakersSection from '../components/sections/SpeakersSection';
-import PageLayout from '../pages-layout/PageLayout';
+import AppFooter from '../components/footer/AppFooter';
+import AppHeader from '../components/headers/AppHeader';
+import BaseSection from '../components/sections/BaseSection';
+import { MOCK_NAV_LINKS } from '../mocks/mock-nav-links';
 
 export default function HomePage() {
   return (
-    <PageLayout>
-      <HeroSection />
-      <SpeakersSection />
-    </PageLayout>
+    <div className="flex flex-col gap-2">
+      <AppHeader navLinks={MOCK_NAV_LINKS} />
+      <BaseSection />
+      <BaseSection />
+      <AppFooter />
+    </div>
   );
 }
