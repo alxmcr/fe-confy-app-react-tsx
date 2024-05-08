@@ -1,4 +1,5 @@
 import AppFooter from '../components/footer/AppFooter';
+import BoxGridSpeakers from '../components/grids/speakers/BoxGridSpeakers';
 import AppHeader from '../components/headers/AppHeader';
 import BaseSection from '../components/sections/BaseSection';
 import HeroSection from '../components/sections/HeroSection';
@@ -10,7 +11,10 @@ export default function HomePage() {
       <AppHeader navLinks={MOCK_NAV_LINKS} />
       <HeroSection />
       <BaseSection id="speakers">
-        <p>Hola!</p>
+        <div className="flex flex-col gap-4">
+          <h2 className="font-bungee-inline text-[34px] text-golden-300">Speakers</h2>
+          <BoxGridSpeakers />
+        </div>
       </BaseSection>
       <AppFooter />
     </div>
