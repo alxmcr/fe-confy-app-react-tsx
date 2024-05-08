@@ -4,7 +4,7 @@ import Icon24x24Heart from '../@icons/24x24/Icon24x24Heart';
 export default function AppFooter() {
   return (
     <footer className="flex justify-center bg-blue-500 px-4 py-2 md:px-10 md:py-4">
-      <div className="flex h-[60px] w-full items-center justify-center gap-3 bg-pink-500 lg:w-[1028px]">
+      <div className="flex h-[60px] w-full items-center justify-center gap-3 bg-pink-500 text-[20px] lg:w-[1028px]">
         <a
           href="https://github.com/alxmcr/fe-confy-app-react-tsx"
           target="_blank"
