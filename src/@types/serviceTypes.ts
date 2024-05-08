@@ -25,7 +25,7 @@ export type SpeakerData = {
 };
 
 export type TalkData = {
-  id: number;
+  id: string;
   time: string;
   title: string;
   speakerName: string;
