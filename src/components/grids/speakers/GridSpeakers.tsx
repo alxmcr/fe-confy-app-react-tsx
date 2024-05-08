@@ -7,7 +7,7 @@ type Props = {
 
 export default function GridSpeakers({ speakers = [] }: Props) {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3">
+    <div className="flex flex-col gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
       {speakers.map((speaker) => (
         <CardSpeaker key={speaker.login.uuid} speaker={speaker} />
       ))}

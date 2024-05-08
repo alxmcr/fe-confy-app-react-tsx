@@ -20,9 +20,9 @@ export default function CardSpeaker({ speaker }: Props) {
   }
 
   return (
-    <article id={id}>
+    <article id={id} className="gap-3 rounded-lg bg-golden-400 p-3">
       <img className="" src={photo} alt={`${firstname} ${lastname} profile photo`} />
-      <div className="">
+      <div className="flex flex-col text-light-950">
         <span className="">
           {firstname} {lastname}
         </span>
