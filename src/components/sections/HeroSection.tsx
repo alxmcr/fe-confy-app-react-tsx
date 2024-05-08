@@ -1,10 +1,9 @@
+import BaseSection from './BaseSection';
+
 export default function HeroSection() {
   return (
-    <section
-      id="hero"
-      className="flex size-full justify-center bg-[url('/assets/images/eiffel-tower.jpg')] bg-cover bg-center bg-no-repeat py-4"
-    >
-      <div className="relative flex w-full flex-col items-center justify-center gap-3">
+    <BaseSection id="hero">
+      <div className="relative flex h-full flex-col items-center justify-center gap-4 bg-[url('/assets/images/eiffel-tower.jpg')] bg-cover bg-center bg-no-repeat px-2 py-3">
         <div className="flex w-full flex-col gap-2 bg-golden-300 py-3">
           <h1 className="text-center font-bungee-inline text-[60px]">Confy</h1>
           <div className="flex flex-col gap-1">
@@ -22,13 +21,13 @@ export default function HeroSection() {
             Tickets
           </a>
         </div>
-        <p className="absolute bottom-0 right-0 px-2 text-golden-300">
+        <p className="absolute bottom-2 right-1 px-2 text-golden-300">
           {`Photo by `}
           <a href="https://www.pexels.com/photo/illuminated-eiffel-tower-at-night-18353583/">
             Stephen Leonardi.
           </a>
         </p>
       </div>
-    </section>
+    </BaseSection>
   );
 }
