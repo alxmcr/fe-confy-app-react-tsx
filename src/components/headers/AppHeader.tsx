@@ -7,7 +7,7 @@ type Props = {
 
 export default function AppHeader({ navLinks = [] }: Props) {
   return (
-    <header className="flex w-full justify-center bg-light-950">
+    <header className="flex h-[70px] w-full justify-center bg-light-950">
       <BoxAppNavigation navLinks={navLinks} />
     </header>
   );

@@ -15,8 +15,8 @@ export default function BoxAppNavigation({ navLinks = [] }: Props) {
   const [showMenu, setShowMenu] = React.useState(false);
 
   return (
-    <div className="flex w-full flex-col items-center justify-between border px-[16px] text-golden-300 md:flex-row md:px-[40px] lg:w-[1028px] lg:px-0">
-      <div className="flex items-center justify-between">
+    <div className="flex w-full items-center justify-between border px-[16px] text-golden-300 md:flex-row md:px-[40px] lg:w-[1028px] lg:px-0">
+      <div className="flex w-full items-center justify-between">
         <NavLink to="/" className="flex items-center gap-3">
           <Icon44x44Code />
           <span className="text-[25px] font-bold">Confy</span>
