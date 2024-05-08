@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-image': 'url()',
+        'hero-image': 'url(/assets/images/eiffel-tower.jpg)',
       },
       colors: {
         transparent: 'transparent',
