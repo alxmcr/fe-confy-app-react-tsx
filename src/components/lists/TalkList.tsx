@@ -7,7 +7,7 @@ type Props = {
 
 export default function TalkList({ talks = [] }: Props) {
   return (
-    <div>
+    <div className="flex flex-col gap-3">
       {talks.map((talk) => (
         <TalkListItem key={talk.id} talk={talk} />
       ))}
