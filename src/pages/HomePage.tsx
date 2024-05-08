@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className="flex flex-col gap-2 bg-light-950">
       <AppHeader navLinks={MOCK_NAV_LINKS} />
       <BaseSection id="hero">
-        <p>Hola!</p>
+        <div className="h-full bg-[url('/assets/images/eiffel-tower.jpg')] bg-cover bg-center bg-no-repeat"></div>
       </BaseSection>
       <BaseSection id="speakers">
         <p>Hola!</p>
