@@ -20,14 +20,14 @@ export default function CardSpeaker({ speaker }: Props) {
   }
 
   return (
-    <article id={id} className="flex flex-col items-center gap-3 rounded-lg bg-golden-400 p-3">
+    <article id={id} className="flex flex-col items-center gap-2 rounded-lg bg-golden-400 p-3">
       <img className="size-[80px] rounded-full" src={photo} alt={`${firstname} ${lastname} profile photo`} />
-      <div className="flex flex-col gap-2 text-light-950">
+      <div className="flex flex-col items-center gap-1 text-light-950">
         <span className="text-[20px] font-bold">
           {firstname} {lastname}
         </span>
-        <a className="" href={`https://twitter.com/${twitter}`}>{`@${twitter}`}</a>
-        <a className="" href={websiteURL}>
+        <a href={`https://twitter.com/${twitter}`} className='text-[18px]'>{`@${twitter}`}</a>
+        <a href={websiteURL}>
           <Icon24x24GlobalAmericas />
         </a>
       </div>
