@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-image': 'url(/assets/images/eiffel-tower.jpg)',
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
@@ -17,7 +20,7 @@ export default {
           700: '#525252',
           800: '#464646',
           900: '#3d3d3d',
-          950: '#292929',
+          950: '#111',
         },
         golden: {
           50: '#fffaeb',

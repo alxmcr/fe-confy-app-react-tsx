@@ -14,7 +14,9 @@ export default function AppFooter() {
       </a>
       <span className="flex items-center gap-2">
         {` | Made with `}
-        <Icon24x24Heart />
+        <span className="text-golden-300">
+          <Icon24x24Heart />
+        </span>
         {` in Latam`}
       </span>
     </footer>
