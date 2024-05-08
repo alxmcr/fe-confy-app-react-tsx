@@ -1,17 +1,16 @@
 import { TalkData } from '../../@types/serviceTypes';
 import { ITalkService } from './ITalkService';
-import MOCK_TALKS from '../../mocks/mock-talks.json';
 
 export class TalkService implements ITalkService {
   async findAllTalks(): Promise<TalkData[]> {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        try {
-          resolve(MOCK_TALKS as TalkData[]);
-        } catch (error) {
-          reject(error);
-        }
-      }, 1000);
-    });
+    const response = await fetch('public/json/mock-talks.json');
+
+    if (!response.ok) {
+      throw new Error('Failed to fetch data');
+    }
+
+    const data: TalkData[] = await response.json();
+    
+    return data;
   }
 }
