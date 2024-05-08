@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "time": "08:00 a.m",
+        "title": "Presentation Ceremony",
+        "speakerName": "Team Confy",
+        "speakerPhoto": "/assets/images/team-confy.jpg",
+        "author": "Brooke Cagle"
+    },
+    {
+        "id": 2,
+        "time": "08:15 a.m",
+        "title": "React.js: From zero to hero",
+        "speakerName": "Faustine Da Silva",
+        "speakerPhoto": "https://randomuser.me/api/portraits/med/women/33.jpg",
+        "author": "Randomuser.me"
+    },
+    {
+        "id": 3,
+        "time": "09:00 a.m",
+        "title": "Styled components",
+        "speakerName": "Lucienne Masson",
+        "speakerPhoto": "https://randomuser.me/api/portraits/med/women/52.jpg",
+        "author": "Randomuser.me"
+    },
+    {
+        "id": 4,
+        "time": "10:00 a.m",
+        "title": "React with Storybook",
+        "speakerName": "Ruben Johnston",
+        "speakerPhoto": "https://randomuser.me/api/portraits/med/men/33.jpg",
+        "author": "Randomuser.me"
+    },
+    {
+        "id": 5,
+        "time": "11:00 a.m",
+        "title": "React and TypeScript",
+        "speakerName": "Mikolaj Magerøy",
+        "speakerPhoto": "https://randomuser.me/api/portraits/med/men/15.jpg",
+        "author": "Randomuser.me"
+    },
+    {
+        "id": 6,
+        "time": "12:00 p.m",
+        "title": "Lunch",
+        "speakerName": "All people :) ",
+        "speakerPhoto": "/assets/images/team-confy.jpg",
+        "author": "Brooke Cagle"
+    },
+    {
+        "id": 7,
+        "time": "14:00 p.m",
+        "title": "React Hooks",
+        "speakerName": "Charlotte Green",
+        "speakerPhoto": "https://randomuser.me/api/portraits/med/women/32.jpg",
+        "author": "Randomuser.me"
+    },
+    {
+        "id": 8,
+        "time": "15:00 p.m",
+        "title": "React Animations",
+        "speakerName": "Miquel Van der Lans",
+        "speakerPhoto": "https://randomuser.me/api/portraits/med/men/38.jpg",
+        "author": "Randomuser.me"
+    },
+    {
+        "id": 9,
+        "time": "16:00 p.m",
+        "title": "Redux vs useContext()",
+        "speakerName": "Elif Sözeri",
+        "speakerPhoto": "https://randomuser.me/api/portraits/med/women/43.jpg",
+        "author": "Randomuser.me"
+    },
+    {
+        "id": 10,
+        "time": "17:00 p.m",
+        "title": "Next.js Framework",
+        "speakerName": "Emilia Laakso",
+        "speakerPhoto": "https://randomuser.me/api/portraits/med/women/30.jpg",
+        "author": "Randomuser.me"
+    },
+    {
+        "id": 11,
+        "time": "18:00 p.m",
+        "title": "Best practices with React",
+        "speakerName": "Noor Myhra",
+        "speakerPhoto": "https://randomuser.me/api/portraits/med/women/21.jpg",
+        "author": "Randomuser.me"
+    },
+    {
+        "id": 12,
+        "time": "19:00 p.m",
+        "title": "Close Ceremony :(",
+        "speakerName": "Team Confy",
+        "speakerPhoto": "/assets/images/team-confy.jpg",
+        "author": "Brooke Cagle"
+    }
+]
