@@ -53,7 +53,7 @@ export default function FormTicketCheckout() {
         setValue={setFullname}
         placeholder="Write your fullname here"
       />
-      <div className="flex gap-3">
+      <div className="flex flex-col gap-3 md:flex-row">
         <FormField
           label="Credit card Number"
           id="creditCardNumber"
