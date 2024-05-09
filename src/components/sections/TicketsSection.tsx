@@ -4,7 +4,7 @@ import BaseSection from './BaseSection';
 export default function TicketsSection() {
   return (
     <BaseSection id="speakers">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 py-8">
         <h2 className="font-bungee-inline text-[34px] text-golden-300">Your ticket to Confy 2024</h2>
         <CardTicketCheckoutForm />
       </div>
