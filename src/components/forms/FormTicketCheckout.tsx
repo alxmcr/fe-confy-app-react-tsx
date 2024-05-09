@@ -1,4 +1,5 @@
 import React from 'react';
+import FormField from './FormField';
 
 export default function FormTicketCheckout() {
   const [fullname, setFullname] = React.useState('');
@@ -41,63 +42,53 @@ export default function FormTicketCheckout() {
     );
 
   return (
-    <form className="" onSubmit={handlerSendForm} onReset={resetForm}>
-      <div className="">
-        <label className="text-golden-400" htmlFor="fullname">
-          Cardholder name:
-        </label>
-        <input
-          className=""
-          type="text"
-          id="fullname"
-          name="fullname"
-          value={fullname}
-          onChange={(e) => setFullname(e.target.value)}
-          placeholder="Write your fullname here"
-        />
-      </div>
-      <div className="">
-        <label className="" htmlFor="creditCardNumber">
-          Credit card Number:
-        </label>
-        <input
-          className=""
-          type="text"
+    <form
+      onSubmit={handlerSendForm}
+      onReset={resetForm}
+      className="flex flex-col gap-5 bg-golden-300 px-2 py-4"
+    >
+      <FormField
+        label="Cardholder name"
+        id="fullname"
+        name="fullname"
+        value={fullname}
+        setValue={setFullname}
+        placeholder="Write your fullname here"
+      />
+      <div className="flex gap-3">
+        <FormField
+          label="Credit card Number"
           id="creditCardNumber"
           name="creditCardNumber"
           value={creditCardNumber}
-          onChange={(e) => setCreditCardNumber(e.target.value)}
+          setValue={setCreditCardNumber}
           placeholder="Write your credit card number here"
         />
-        <label className="" htmlFor="cvvNumber">
-          CVV Number:
-        </label>
-        <input
-          className=""
-          type="text"
+        <FormField
+          label="CVV Number"
           id="cvvNumber"
           name="cvvNumber"
           value={cvvNumber}
-          onChange={(e) => setCvvNumber(e.target.value)}
+          setValue={setCvvNumber}
           placeholder="Write your CVV number here"
         />
       </div>
+
+      <FormField
+        label="Expiration Date"
+        id="expirationDate"
+        name="expirationDate"
+        value={expirationDate}
+        setValue={setExpirationDate}
+        placeholder="Write your experation date here"
+      />
+
       <div className="">
-        <label className="" htmlFor="expirationDate">
-          Expiration Date:
-        </label>
-        <input
-          className=""
-          type="date"
-          id="date"
-          name="expirationDate"
-          value={expirationDate}
-          onChange={(e) => setExpirationDate(e.target.value)}
-          placeholder="Write your experation date here"
-        />
-      </div>
-      <div className="">
-        <button disabled={isDisabledSubmit} className="" type="submit">
+        <button
+          disabled={isDisabledSubmit}
+          type="submit"
+          className="h-[50px] w-full rounded-lg bg-light-950 text-[20px] text-light-50 disabled:opacity-75"
+        >
           Make a payment
         </button>
       </div>

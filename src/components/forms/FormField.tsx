@@ -1,6 +1,6 @@
 type Props = {
   label: string;
-  htmlFor: string;
+  id: string;
   name: string;
   placeholder: string;
   value: string;
@@ -8,19 +8,20 @@ type Props = {
 };
 
 export default function FormField({
-  htmlFor = 'x',
-  name = 'y',
+  label = '',
+  id = '',
+  name = '',
   placeholder = '',
   value = '',
   setValue,
 }: Props) {
   return (
-    <label htmlFor={htmlFor} className="text-golden-400">
-      <span>Cardholder name:</span>
+    <label htmlFor={id} className="flex w-full flex-col gap-2 text-light-950">
+      <span>{label}:</span>
       <input
-        className=""
+        className="rounded-md p-2"
         type="text"
-        id={htmlFor}
+        id={id}
         name={name}
         value={value}
         onChange={(e) => setValue(e.target.value)}
