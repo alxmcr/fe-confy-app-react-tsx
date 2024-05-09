@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function TicketCheckoutForm() {
+export default function FormTicketCheckout() {
   const [fullname, setFullname] = React.useState('');
   const [creditCardNumber, setCreditCardNumber] = React.useState('');
   const [cvvNumber, setCvvNumber] = React.useState('');
@@ -43,7 +43,7 @@ export default function TicketCheckoutForm() {
   return (
     <form className="" onSubmit={handlerSendForm} onReset={resetForm}>
       <div className="">
-        <label className="" htmlFor="fullname">
+        <label className="text-golden-400" htmlFor="fullname">
           Cardholder name:
         </label>
         <input
