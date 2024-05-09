@@ -36,7 +36,7 @@ export default function FormTicketCheckout() {
   }, [fullname, creditCardNumber, cvvNumber, expirationDate]);
 
   if (submitted) {
-    return <CardPaymentProcessed />;
+    return <CardPaymentProcessed setSubmitted={setSubmitted} />;
   }
 
   return (
@@ -58,6 +58,7 @@ export default function FormTicketCheckout() {
           label="Credit card Number"
           id="creditCardNumber"
           name="creditCardNumber"
+          maxLength={12}
           value={creditCardNumber}
           setValue={setCreditCardNumber}
           placeholder="Write your credit card number here"
@@ -66,6 +67,7 @@ export default function FormTicketCheckout() {
           label="CVV Number"
           id="cvvNumber"
           name="cvvNumber"
+          maxLength={3}
           value={cvvNumber}
           setValue={setCvvNumber}
           placeholder="Write your CVV number here"
@@ -73,6 +75,7 @@ export default function FormTicketCheckout() {
       </div>
 
       <FormField
+        maxLength={5}
         label="Expiration Date"
         id="expirationDate"
         name="expirationDate"
