@@ -10,7 +10,7 @@ export class TalkService implements ITalkService {
     }
 
     const data: TalkData[] = await response.json();
-    
+
     return data;
   }
 }
