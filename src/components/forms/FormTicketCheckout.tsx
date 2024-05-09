@@ -1,5 +1,6 @@
 import React from 'react';
 import FormField from './FormField';
+import CardPaymentProcessed from '../cards/CardPaymentProcessed';
 
 export default function FormTicketCheckout() {
   const [fullname, setFullname] = React.useState('');
@@ -34,12 +35,9 @@ export default function FormTicketCheckout() {
     }
   }, [fullname, creditCardNumber, cvvNumber, expirationDate]);
 
-  if (submitted)
-    return (
-      <p className="">
-        Payment processed. <br /> Thanks! See you soon :)
-      </p>
-    );
+  if (submitted) {
+    return <CardPaymentProcessed />;
+  }
 
   return (
     <form
