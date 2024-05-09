@@ -3,7 +3,7 @@ import { ITalkService } from './ITalkService';
 
 export class TalkService implements ITalkService {
   async findAllTalks(): Promise<TalkData[]> {
-    const response = await fetch('public/json/mock-talks.json');
+    const response = await fetch('/json/mock-talks.json');
 
     if (!response.ok) {
       throw new Error('Failed to fetch data');
