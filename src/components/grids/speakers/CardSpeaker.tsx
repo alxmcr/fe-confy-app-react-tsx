@@ -26,7 +26,7 @@ export default function CardSpeaker({ speaker }: Props) {
         <span className="text-[20px] font-bold">
           {firstname} {lastname}
         </span>
-        <a href={`https://twitter.com/${twitter}`} className='text-[18px]'>{`@${twitter}`}</a>
+        <a href={`https://twitter.com/${twitter}`} className="text-[18px]">{`@${twitter}`}</a>
         <a href={websiteURL}>
           <Icon24x24GlobalAmericas />
         </a>
